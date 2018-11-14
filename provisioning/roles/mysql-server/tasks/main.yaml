@@ -1,0 +1,12 @@
+---
+- name: Install mysql-server
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - mysql-server
+  tags:
+    - mysql-server
+
+- name: Create mysql-server
+  notify: restart mysql-server
+  tags:
+    - mysql-server
