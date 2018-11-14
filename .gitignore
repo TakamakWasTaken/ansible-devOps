@@ -1,9 +1,6 @@
+provisioning/playbook.retry
 .vagrant
-/cookbooks
 
-# Bundler
-bin/*
-.bundle/*
 
-.kitchen/
-.kitchen.local.yml
+# hosts
+provisioning/hosts
